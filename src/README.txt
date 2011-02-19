@@ -1,5 +1,9 @@
 A sphinx theme for sphinx-users.jp site.
 
+Output Sample
+==============
+:output: http://packages.python.org/sphinxjp.themes.sphinxjp/
+
 Features
 ========
 * provide ``sphinxjp`` theme used on the sphinx-users.jp site
