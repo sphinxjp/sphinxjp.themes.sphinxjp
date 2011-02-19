@@ -1,0 +1,6 @@
+include buildout.cfg
+include bootstrap.py
+include MANIFEST.in
+recursive-include docs *
+recursive-include src *.py *.txt *.html *.png *.js *.css *.conf
+
