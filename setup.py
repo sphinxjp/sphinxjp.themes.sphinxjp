@@ -21,7 +21,7 @@ classifiers = [
 setup(
      name='sphinxjp.themes.sphinxjp',
      version=version,
-     description='A sphinx theme for sphinx-users.jp site.',
+     description='A sphinx theme for sphinx-users.jp site. #sphinxjp',
      long_description=long_description,
      classifiers=classifiers,
      keywords=['sphinx', 'reStructuredText', 'theme'],
