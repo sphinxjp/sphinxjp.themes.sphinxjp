@@ -1,9 +1,13 @@
 History
 =======
 
+0.1.2 (unreleased)
+------------------
+* fix: <ul><li> list item in the <ol><li> rendering as numbered list, thank you @usaturn!
+
 0.1.1 (2011/7/6)
 ------------------
-* fixed namespace package declaration missing, thank you togakushi!
+* fix: namespace package declaration missing, thank you @togakushi!
 
 0.1.0 (2011/2/19)
 ------------------

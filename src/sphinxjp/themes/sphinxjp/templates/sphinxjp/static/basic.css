@@ -305,7 +305,7 @@ dl.glossary dt {
     font-size: 1.1em;
 }
 
-ol li {
+ol > li {
     margin-left: 2em;
     list-style: decimal outside none;
 }
