@@ -11,6 +11,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 {%- endblock doctype -%}
+{%- set url_root = pathto('', 1) %}
+{%- if url_root == '#' %}{% set url_root = '' %}{% endif %}
+{%- if not embedded and docstitle %}
+  {%- set titlesuffix = " &mdash; "|safe + docstitle|e %}
+{%- else %}
+  {%- set titlesuffix = "" %}
+{%- endif %}
 {%- macro relbar() %}
   <div class="relbar">
     {%- if prev %}
@@ -26,6 +33,27 @@
     </dl>
     {%- endif %}
   </div>
+{%- endmacro %}
+{%- macro script() %}
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '{{ url_root }}',
+        VERSION:     '{{ release|e }}',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '{{ '' if no_search_suffix else file_suffix }}',
+        HAS_SOURCE:  {{ has_source|lower }}
+      };
+    </script>
+    {%- for scriptfile in script_files %}
+    <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
+    {%- endfor %}
+{%- endmacro %}
+{%- macro css() %}
+    <link rel="stylesheet" href="{{ pathto('_static/' + style, 1) }}" type="text/css" />
+    <link rel="stylesheet" href="{{ pathto('_static/pygments.css', 1) }}" type="text/css" />
+    {%- for cssfile in css_files %}
+    <link rel="stylesheet" href="{{ pathto(cssfile, 1) }}" type="text/css" />
+    {%- endfor %}
 {%- endmacro %}
 {%- macro sidebar() %}
   <div id="sidebar" class="left">
@@ -65,27 +93,21 @@
 {%- endmacro -%}
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 <head>
-  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-  <title>{{ title }}</title>
-  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/' + style, 1) }}" />
-  <link rel="stylesheet" type="text/css" href="{{ pathto('_static/pygments.css', 1) }}" />
-  <meta name="description" content="Python製ドキュメンテーションビルダー、Sphinxの日本ユーザ会">
-  <meta name="keywords" content="Sphinx,スフィンクス,ドキュメンテーション,ツール,Python,reStructuredText,reST">
+  <meta http-equiv="Content-Type" content="text/html; charset={{ encoding }}" />
+  {{ metatags }}
+  {%- block htmltitle %}
+  <title>{{ title|striptags|e }}{{ titlesuffix }}</title>
+  {%- endblock %}
+  {{ css() }}
   {%- if not embedded %}
-  <script type="text/javascript">
-  var DOCUMENTATION_OPTIONS = {
-    URL_ROOT:    '{{ pathto("", 1) }}',
-    VERSION:     '{{ release|e }}',
-    COLLAPSE_MODINDEX: false,
-    FILE_SUFFIX: '{{ file_suffix }}',
-    HAS_SOURCE:  {{ has_source|lower }}
-  };
-  </script>
-  {%- for scriptfile in script_files %}
-  <script type="text/javascript" src="{{ pathto(scriptfile, 1) }}"></script>
-  {%- endfor %}
+  {{ script() }}
   {%- if use_opensearch %}
-  <link rel="search" type="application/opensearchdescription+xml" title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}" href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+  <link rel="search" type="application/opensearchdescription+xml"
+        title="{% trans docstitle=docstitle|e %}Search within {{ docstitle }}{% endtrans %}"
+        href="{{ pathto('_static/opensearch.xml', 1) }}"/>
+  {%- endif %}
+  {%- if favicon %}
+  <link rel="shortcut icon" href="{{ pathto('_static/' + favicon, 1) }}"/>
   {%- endif %}
   {%- if hasdoc('search') %}
   <link rel="search" title="{{ _('Search') }}" href="{{ pathto('search') }}" />
@@ -116,7 +138,7 @@
   </script>
   {%- endif %}
 
-{%- endif %}
+  {%- endif %}
   <!-- Sticky footer -->
   <!--[if  IE 8]>
   <style type="text/css">
