@@ -1,9 +1,18 @@
 History
 =======
 
-0.1.2 (unreleased)
+0.2.0 (2013/10/5)
 ------------------
 * fix: <ul><li> list item in the <ol><li> rendering as numbered list, thank you @usaturn!
+* transplant many macro/header parts from sphinx basic theme.
+* separate layout.html into some sub templates:
+
+  * globalnavigation.html : top-right 3 icons
+  * globaltoc.html : global toctree for sidebar
+  * localtoc.html : local toctree for sidebar
+  * relations.html : next/pref link for sidebar
+  * searchbox.html : search box for sidebar
+  * sourcelink.html : source link for sidebar
 
 0.1.1 (2011/7/6)
 ------------------
