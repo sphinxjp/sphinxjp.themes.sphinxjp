@@ -4,7 +4,7 @@
 
     Master layout template for sphinx-users.jp themes.
 
-    :copyright: Copyright 2011 by the Sphinx team, see AUTHORS.
+    :copyright: Copyright 2011 by the sphinx-users.jp team, see AUTHORS.
     :license: MIT, see LICENSE for details.
 #}
 {%- block doctype -%}
@@ -58,36 +58,29 @@
 {%- macro sidebar() %}
   <div id="sidebar" class="left">
     <div id="sidebarWrap">
-      <div id="toc" class="sidebarRow">
-        <h3>{{ _('Table Of Contents') }}</h3>
-        {{ toctree() }}
-        </div>
-        <div id="rel" class="sidebarRow">
-        {%- block sidebarrel %}
-        {%- if prev %}
-          <div class="relRow prev">
-            <h4>{{ _('Previous topic') }}</h4>
-            <p class="topless"><a href="{{ prev.link|e }}" title="{{ _('previous chapter') }}">{{ prev.title }}</a></p>
-          </div>
-        {%- endif %}
-        {%- if next %}
-          <div class="relRow next">
-            <h4>{{ _('Next topic') }}</h4>
-            <p class="topless"><a href="{{ next.link|e }}" title="{{ _('next chapter') }}">{{ next.title }}</a></p>
-          </div>
-        {%- endif %}
+      {%- if sidebars != None %}
+        {#- new style sidebar: explicitly include/exclude templates #}
+        {%- for sidebartemplate in sidebars %}
+        {%- include sidebartemplate %}
+        {%- endfor %}
+      {%- else %}
+        {#- old style sidebars: using blocks -- should be deprecated #}
+        {%- block sidebartoc %}
+        {%- include "localtoc.html" %}
         {%- endblock %}
-      </div>
-      <div id="source" class="sidebarRow">
-      {%- block sidebarsourcelink %}
-      {%- if show_source and has_source and sourcename %}
-        <h3>{{ _('This Page') }}</h3>
-        <ul class="this-page-menu">
-          <li><a href="{{ pathto('_sources/' + sourcename, true)|e }}" rel="nofollow">{{ _('Show Source') }}</a></li>
-        </ul>
+        {%- block sidebarrel %}
+        {%- include "relations.html" %}
+        {%- endblock %}
+        {%- block sidebarsourcelink %}
+        {%- include "sourcelink.html" %}
+        {%- endblock %}
+        {%- if customsidebar %}
+        {%- include customsidebar %}
+        {%- endif %}
+        {%- block sidebarsearch %}
+        {%- include "searchbox.html" %}
+        {%- endblock %}
       {%- endif %}
-      {%- endblock %}
-      </div>
     </div>
   </div>
 {%- endmacro -%}
