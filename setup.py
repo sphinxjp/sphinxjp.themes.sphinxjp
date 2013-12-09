@@ -13,6 +13,8 @@ classifiers = [
     "Development Status :: 4 - Beta",
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
     "Topic :: Software Development",
     "Topic :: Software Development :: Documentation",
     "Topic :: Text Processing :: Markup",
@@ -36,9 +38,7 @@ setup(
      include_package_data=True,
      install_requires=[
         'setuptools',
-        'docutils',
         'sphinx',
-        'sphinxjp.themecore',
      ],
      entry_points="""
         [sphinx_themes]

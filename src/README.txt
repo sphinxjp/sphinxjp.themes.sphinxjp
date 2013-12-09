@@ -20,7 +20,6 @@ Convert Usage
 ==============
 setup conf.py with::
 
-    extensions = ['sphinxjp.themecore']
     html_theme = 'sphinxjp'
 
 and run::
@@ -30,8 +29,8 @@ and run::
 
 Requirements
 ============
-* sphinx 1.0.x or later.
-* sphinxjp.themecore
+* sphinx 1.0.x or later (1.2 is recommended)
+* sphinxjp.themecore (if you use 1.1.3 or before)
 
 
 License
