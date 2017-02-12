@@ -11,9 +11,9 @@ Features
 
 Setup
 =====
-Make environment with easy_install::
+Make environment with pip install::
 
-    $ easy_install sphinxjp.themes.sphinxjp
+    $ pip install sphinxjp.themes.sphinxjp
 
 
 Convert Usage

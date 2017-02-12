@@ -12,12 +12,12 @@ Sample
     master_doc = 'index'
 
     project = u'sphinx-users.jp theme sample'
-    version = release = '0.3.0'
+    version = release = '1.0.0'
     copyright = u'2011, Sphinx-users.jp'
 
     ################################################################
     # HTML theme setting
-    # You need to install `easy_install sphinxjp.themes.sphinxjp`
+    # You need to install `pip install sphinxjp.themes.sphinxjp`
 
     html_theme = 'sphinxjp'
 

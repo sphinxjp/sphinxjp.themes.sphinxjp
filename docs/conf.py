@@ -8,7 +8,7 @@ copyright = u'2011-2017, Sphinx-users.jp'
 
 ################################################################
 # Extension and Theme setting
-# You need to install `easy_install sphinxjp.themes.sphinxjp`
+# You need to install `pip install sphinxjp.themes.sphinxjp`
 
 html_theme = 'sphinxjp'
 
