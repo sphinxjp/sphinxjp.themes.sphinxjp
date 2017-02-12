@@ -13,13 +13,20 @@
     </p>
     <p class="sp">
       {%- if show_sphinx %}
-      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
+      {% trans sphinx_version=sphinx_version|e %}Created using <a href="http://www.sphinx-doc.org/">Sphinx</a> {{ sphinx_version }}.{% endtrans %}
       {%- endif %}
     </p>
     {%- if last_updated %}
     <p class="update">
       {% trans last_updated=last_updated|e %}
       Last updated on {{ last_updated }}.
+      {% endtrans %}
+    </p>
+    {%- endif %}
+    {%- if theme_repository_url %}
+    <p class="repository_url">
+      {% trans theme_repository_url=theme_repository_url|e %}
+      <a href="{{ theme_repository_url }}">Source repository</a>.
       {% endtrans %}
     </p>
     {%- endif %}

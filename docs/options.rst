@@ -48,3 +48,5 @@ HTML theme options
     If you set `hatena_star = True`, you need set this token.
     See also: http://s.hatena.ne.jp/
 
+:repository_url:
+    Footer link to repository.

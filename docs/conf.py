@@ -19,6 +19,6 @@ html_theme_options = {
     'hatena_bookmark': False,
     'hatena_star': False,
     'hatena_star_token': '<GET YOUR HATENA STAR TOKEN AND SET HERE>',
+    'repository_url': 'https://github.com/sphinxjp/sphinxjp.themes.sphinxjp/',
 }
-
 
