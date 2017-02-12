@@ -30,7 +30,7 @@ setup(
      classifiers=classifiers,
      keywords=['sphinx', 'reStructuredText', 'theme'],
      author='sphinx-users.jp',
-     author_email='shimizukawa at gmail dot com',
+     author_email='shimizukawa@gmail.com',
      url='https://github.com/sphinxjp/sphinxjp.themes.sphinxjp',
      license='MIT',
      namespace_packages=['sphinxjp', 'sphinxjp.themes'],
