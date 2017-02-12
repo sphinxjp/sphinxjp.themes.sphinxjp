@@ -4,6 +4,7 @@ History
 1.0.0 (unreleased)
 ------------------
 * repository: moved from bitbucket to github
+* doc: moved from pythonhosted.org to readthedocs
 * doc: easy_install -> pip install
 * doc: remove a note for sphinxjp.themecore
 * test: Drop py25,py26,py31, Add py35,py36
