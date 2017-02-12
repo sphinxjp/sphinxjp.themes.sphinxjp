@@ -13,7 +13,7 @@ Sample
 
     project = u'sphinx-users.jp theme sample'
     version = release = '1.0.0'
-    copyright = u'2011, Sphinx-users.jp'
+    copyright = u'2011-2017, Sphinx-users.jp'
 
     ################################################################
     # HTML theme setting
