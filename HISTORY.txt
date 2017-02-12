@@ -6,6 +6,7 @@ History
 * repository: moved from bitbucket to github
 * doc: easy_install -> pip install
 * doc: remove a note for sphinxjp.themecore
+* test: Drop py25,py26,py31, Add py35,py36
 
 0.3.1 (2014/2/12)
 ------------------
