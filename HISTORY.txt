@@ -3,7 +3,9 @@ History
 
 1.0.0 (unreleased)
 ------------------
-* move repository to github
+* repository: moved from bitbucket to github
+* doc: easy_install -> pip install
+* doc: remove a note for sphinxjp.themecore
 
 0.3.1 (2014/2/12)
 ------------------
