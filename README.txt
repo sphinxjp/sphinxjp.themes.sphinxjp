@@ -2,7 +2,7 @@ A sphinx theme for sphinx-users.jp site.
 
 Output Sample
 ==============
-:output: http://packages.python.org/sphinxjp.themes.sphinxjp/
+:output: http://sphinxjpthemessphinxjp.rtfd.io/
 
 Features
 ========
