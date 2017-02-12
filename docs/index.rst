@@ -9,7 +9,7 @@ install:
 
 .. code-block:: bash
 
-    $ easy_install sphinxjp.themes.sphinxjp
+    $ pip install sphinxjp.themes.sphinxjp
 
 
 setup your ``conf.py`` with:
@@ -36,8 +36,7 @@ Links
 =======
 
 :download: http://pypi.python.org/pypi/sphinxjp.themes.sphinxjp
-:repository: https://bitbucket.org/shimizukawa/sphinxjp.themes.sphinxjp
-:bug tracker: https://bitbucket.org/shimizukawa/sphinxjp.themes.sphinxjp/issues
+:repository: https://github.com/sphinxjp/sphinxjp.themes.sphinxjp
 
 
 Contents

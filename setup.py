@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
-import os, sys
+import os
 
-version = '0.3.2'
+version = '1.0.0'
 long_description = '\n'.join([
         open(os.path.join("src","README.txt")).read(),
         open(os.path.join("src","AUTHORS.txt")).read(),
@@ -18,23 +18,23 @@ classifiers = [
     "Topic :: Software Development",
     "Topic :: Software Development :: Documentation",
     "Topic :: Text Processing :: Markup",
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Theme",
 ]
 
 setup(
      name='sphinxjp.themes.sphinxjp',
      version=version,
-     description='A sphinx theme for sphinx-users.jp site. #sphinxjp',
+     description='A sphinx theme for sphinx-users.jp site.',
      long_description=long_description,
      classifiers=classifiers,
      keywords=['sphinx', 'reStructuredText', 'theme'],
-     author='Takayuki SHIMIZUKAWA',
+     author='sphinx-users.jp',
      author_email='shimizukawa at gmail dot com',
-     url='http://bitbucket.org/shimizukawa/sphinxjp.themes.sphinxjp',
+     url='https://github.com/sphinxjp/sphinxjp.themes.sphinxjp',
      license='MIT',
      namespace_packages=['sphinxjp', 'sphinxjp.themes'],
-     packages=find_packages('src'),
-     package_dir={'': 'src'},
-     package_data = {'': ['buildout.cfg']},
+     packages=find_packages('.'),
      include_package_data=True,
      install_requires=[
         'setuptools',

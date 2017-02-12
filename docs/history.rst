@@ -2,5 +2,5 @@
 History and Authors
 ====================
 
-.. include:: ../src/HISTORY.txt
-.. include:: ../src/AUTHORS.txt
+.. include:: ../HISTORY.txt
+.. include:: ../AUTHORS.txt

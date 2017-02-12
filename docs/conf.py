@@ -3,8 +3,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 project = u'sphinx-users.jp theme sample'
-version = release = '0.3.0'
-copyright = u'2011, Sphinx-users.jp'
+version = release = '1.0.0'
+copyright = u'2011-2017, Sphinx-users.jp'
 
 ################################################################
 # Extension and Theme setting
