@@ -1,5 +1,29 @@
 A sphinx theme for sphinx-users.jp site.
 
+.. image:: https://img.shields.io/pypi/v/sphinxjp.themes.sphinxjp.svg
+   :target: https://pypi.python.org/pypi/sphinxjp.themes.sphinxjp
+   :alt: PyPI version
+
+.. image:: https://readthedocs.org/projects/sphinxjpthemessphinxjp/badge/?version=master
+   :target: http://sphinxjpthemessphinxjp.readthedocs.io/en/master/?badge=master
+   :alt: Documentation Status
+
+.. image:: https://img.shields.io/pypi/l/sphinxjp.themes.sphinxjp.svg
+   :target: https://github.com/sphinxjp/sphinxjp.themes.sphinxjp/blob/master/LICENSE.txt
+   :alt: LICENSE
+
+.. image:: https://img.shields.io/pypi/format/sphinxjp.themes.sphinxjp.svg
+   :target: https://pypi.python.org/pypi/sphinxjp.themes.sphinxjp
+   :alt: distribution format
+
+.. image:: https://img.shields.io/github/tag/sphinxjp/sphinxjp.themes.sphinxjp.svg
+   :target: https://github.com/sphinxjp/sphinxjp.themes.sphinxjp
+   :alt: Github tag
+
+.. image:: https://travis-ci.org/sphinxjp/sphinxjp.themes.sphinxjp.svg?branch=master
+   :target: https://travis-ci.org/sphinxjp/sphinxjp.themes.sphinxjp
+   :alt: CI status
+
 Output Sample
 ==============
 :output: http://sphinxjpthemessphinxjp.rtfd.io/
