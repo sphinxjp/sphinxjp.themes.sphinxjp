@@ -1,6 +1,9 @@
 History
 =======
 
+1.0.1 (unreleased)
+------------------
+
 1.0.0 (2017/02/12)
 ------------------
 * theme parameter: repository_url

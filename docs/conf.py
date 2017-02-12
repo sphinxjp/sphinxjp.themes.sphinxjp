@@ -3,7 +3,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 project = u'sphinx-users.jp theme sample'
-version = release = '1.0.0'
+version = release = '1.0.1'
 copyright = u'2011-2017, Sphinx-users.jp'
 
 ################################################################
