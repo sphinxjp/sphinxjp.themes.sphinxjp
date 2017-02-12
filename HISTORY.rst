@@ -1,7 +1,7 @@
 History
 =======
 
-1.0.0 (unreleased)
+1.0.0 (2017/02/12)
 ------------------
 * theme parameter: repository_url
 * doc: easy_install -> pip install
