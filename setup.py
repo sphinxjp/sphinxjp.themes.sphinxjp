@@ -4,9 +4,9 @@ import os
 
 version = '1.0.0'
 long_description = '\n'.join([
-        open("README.txt").read(),
-        open("AUTHORS.txt").read(),
-        open("HISTORY.txt").read(),
+        open("README.rst").read(),
+        open("AUTHORS.rst").read(),
+        open("HISTORY.rst").read(),
         ])
 
 classifiers = [
