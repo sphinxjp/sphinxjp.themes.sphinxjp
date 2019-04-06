@@ -41,7 +41,7 @@ setup(
         'sphinx',
      ],
      entry_points="""
-        [sphinx_themes]
+        [sphinx.html_themes]
         path = sphinxjp.themes.sphinxjp:template_path
      """,
      zip_safe=False,
