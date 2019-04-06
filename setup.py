@@ -38,11 +38,11 @@ setup(
      include_package_data=True,
      install_requires=[
         'setuptools',
-        'sphinx',
+        'sphinx>=1.6',
      ],
      entry_points="""
         [sphinx.html_themes]
-        path = sphinxjp.themes.sphinxjp:template_path
+        sphinxjp = sphinxjp.themes.sphinxjp
      """,
      zip_safe=False,
 )

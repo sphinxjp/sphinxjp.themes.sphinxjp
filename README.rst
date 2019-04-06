@@ -53,7 +53,7 @@ and run::
 
 Requirements
 ============
-* sphinx 1.2 or later
+* sphinx 1.6 or later
 
 
 License
