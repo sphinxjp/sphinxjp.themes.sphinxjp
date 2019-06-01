@@ -151,6 +151,15 @@ div#document a:active {
 /* TODO: 背景にアイコンを入れる -> ノート、警告、参考 */
 div#document div.admonition {
 	font-size: 90%;	
+	border-top: 1px solid #EEE;
+	border-left: 1px solid #EEE;
+	border-right: 1px solid #AAA;
+	border-bottom: 1px solid #AAA;
+}
+
+div#document div.admonition > p {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
 }
 
 div#document div.admonition > p.admonition-title {

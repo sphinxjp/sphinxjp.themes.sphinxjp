@@ -3,6 +3,7 @@ History
 
 1.0.2 (unreleased)
 ------------------
+* Update style for admonitions (for Sphinx-2.0)
 
 1.0.1 (2019/06/01)
 ------------------
