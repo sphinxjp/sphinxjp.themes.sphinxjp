@@ -1,7 +1,7 @@
 include MANIFEST.in
 include README.rst
 include AUTHORS.rst
-include HISTORY.rst
+include CHANGES.rst
 recursive-include docs *
 recursive-include sphinxjp *.py *.txt *.html *.png *.js *.css *.conf
 
