@@ -6,7 +6,7 @@ version = '1.0.2'
 long_description = '\n'.join([
         open("README.rst").read(),
         open("AUTHORS.rst").read(),
-        open("HISTORY.rst").read(),
+        open("CHANGES.rst").read(),
         ])
 
 classifiers = [
