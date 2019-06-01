@@ -1,7 +1,7 @@
 History
 =======
 
-1.0.2 (unreleased)
+1.0.2 (2019/06/01)
 ------------------
 * Update style for admonitions (for Sphinx-2.0)
 
