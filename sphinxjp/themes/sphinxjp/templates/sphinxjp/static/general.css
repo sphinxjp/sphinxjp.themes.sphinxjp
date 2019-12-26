@@ -42,7 +42,7 @@ div#wrapper {
 div#header {
 	width: 100%;
 	background: #363B45 url(header_bg.png) repeat-x;
-	min-height: 0px;
+	min-height: 120px;
 	border-bottom: 1px solid #333;
 }
 
@@ -388,4 +388,3 @@ div.section { /* reset float for figure (ugly..)*/
 }
 
 /* @end */
-
