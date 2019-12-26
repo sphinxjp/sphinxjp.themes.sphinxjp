@@ -42,7 +42,7 @@ div#wrapper {
 div#header {
 	width: 100%;
 	background: #363B45 url(header_bg.png) repeat-x;
-	min-height: 180px;
+	min-height: 0px;
 	border-bottom: 1px solid #333;
 }
 
